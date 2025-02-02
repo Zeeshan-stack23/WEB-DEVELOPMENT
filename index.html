@@ -1,0 +1,232 @@
+1. Introduction to HTML
+HTML: HyperText Markup Language.
+
+Purpose: Used to create and structure content on the web.
+
+------------------------------------------------------------------------
+
+2. Basic Structure of an HTML Document 
+
+<!DOCTYPE html> <!-- Declares the document type as HTML5 -->
+<html lang="en"> <!-- Root element; "lang" specifies the language (English) -->
+<head> <!-- Contains meta-information about the document -->
+    <meta charset="UTF-8"> <!-- Specifies character encoding (UTF-8) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design -->
+    <title>Document</title> <!-- Title of the document (appears in the browser tab) -->
+</head>
+<body> <!-- Contains the visible content of the webpage -->
+    <!-- Content goes here -->
+</body>
+</html>
+
+------------------------------------------------------------------------
+
+3. Key HTML Elements
+A. Headings
+Used to define headings of different levels.
+
+<h1> to <h6>: <h1> is the highest level, <h6> is the lowest.
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+B. Paragraphs
+Used to define blocks of text.
+
+<p>This is a paragraph.</p>
+
+C. Links
+Used to create hyperlinks.
+
+<a href="https://www.example.com">Example Link</a>
+
+D. Images
+Used to include images.
+
+<img src="image.jpg" alt="Image Description">   <!-- "src" specifies the image source, "alt" provides a description -->
+
+E. Lists
+Used to create ordered and unordered lists.
+
+<ol> <!-- Ordered list -->
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+
+<ul> <!-- Unordered list -->
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>   
+
+F. Tables
+Used to create tables.
+
+<table>
+    <tr> <!-- Table row -->
+        <th>Header 1</th> <!-- Table header cell -->
+        <th>Header 2</th>
+    </tr>
+    <tr>
+        <td>Data 1</td> <!-- Table data cell -->
+        <td>Data 2</td>
+    </tr>
+</table>
+
+G. Forms
+Used to create interactive forms.
+
+<form>
+    <label for="name">Name:</label> <!-- Label for input field -->
+    <input type="text" id="name" name="name"> <!-- Text input field -->
+    <input type="submit" value="Submit"> <!-- Submit button -->
+</form>
+
+H. Divisions and Spans
+Divisions (<div>): Block-level container for grouping elements.
+
+Spans (<span>): Inline container for styling or grouping text.
+
+    <div>
+        <p>This is a paragraph inside a div.</p>
+    </div>
+    <span>This is a span.</span>
+
+I. Buttons
+Used to create clickable buttons.
+
+<button>Click Me</button>
+
+-------------------------------------------------------------------------------------------------------------------
+
+4. Advanced HTML Elements
+A. Multimedia
+Audio: Embeds audio files.
+
+Video: Embeds video files.
+
+<audio src="audio.mp3"></audio>
+<video src="video.mp4"></video>
+
+B. Canvas and SVG
+Canvas: Used for drawing graphics via JavaScript.
+
+SVG: Scalable Vector Graphics for 2D graphics.
+
+<canvas></canvas>
+<svg></svg>
+
+C. Iframes
+Embeds another webpage within the current page.
+
+<iframe src="https://www.google.com"></iframe>
+
+D. Semantic Elements
+Header: Represents the header of a section or page.
+
+Footer: Represents the footer of a section or page.
+
+Section: Defines a section of the document.
+
+Article: Represents self-contained content.
+
+Aside: Represents content aside from the main content.
+
+<header>
+    <h1>Website Header</h1>
+</header>
+<footer>
+    <p>Website Footer</p>
+</footer>
+<section>
+    <article>
+        <h2>Article Title</h2>
+        <p>Article content.</p>
+    </article>
+</section>
+<aside>
+    <p>Additional information.</p>
+</aside>
+
+------------------------------------------------------------------------
+
+5. Input Types in Forms
+HTML provides various input types for forms:
+
+<input type="text"> <!-- Text Input -->
+<input type="password"> <!-- Password Input -->
+<input type="email"> <!-- Email Input -->
+<input type="number"> <!-- Number Input -->
+<input type="date"> <!-- Date Picker -->
+<input type="checkbox"> <!-- Checkbox -->
+<input type="radio"> <!-- Radio Button -->
+<input type="file"> <!-- File Upload -->
+<input type="submit"> <!-- Submit Button -->
+<input type="reset"> <!-- Reset Button -->
+
+-------------------------------------------------------------------------
+
+6. Metadata and Links
+Meta Tags: Provide metadata about the document.
+
+External Resources: Link to external CSS or JavaScript files.
+
+<meta name="description" content="Description of the page">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<link rel="stylesheet" href="style.css"> <!-- External CSS -->
+<script src="script.js"></script> <!-- External JavaScript -->
+
+------------------------------------------------------------------------------
+
+7. Styling and Scripting
+Inline Styles: Applied using the <style> tag.
+
+JavaScript : Added using the <script> tag.
+
+    <style>
+    h1 { color: red; font-size: 20px; }
+    p { color: blue; font-size: 16px; }
+</style>
+<script>
+    alert("Hello, World!");
+</script>
+
+------------------------------------------------------------------------
+
+8. Example of a Complete HTML Page
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <section>
+        <p>This is a sample paragraph.</p>
+        <a href="https://www.google.com">Visit Google</a>
+    </section>
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------
+
+9. Key Points to Remember
+HTML is the backbone of web development.
+
+Use semantic elements for better structure and accessibility.
+
+Always include the <!DOCTYPE html> declaration.
+
+Use <meta> tags for SEO and responsive design.
